@@ -47,7 +47,7 @@ const SideBar = () => {
       {
         context?.openModalCode && <ModalCode />
       }
-      <div className="self-center flex items-center  w-full min-h-[350px] mx-auto   bg-white rounded shadow md:sticky z-10  top-5 order-first md:order-2 row-full">
+      <div className=" flex items-center w-full min-h-[350px] mx-auto   bg-white rounded  md:sticky z-10 top-5  row-full">
 
         <div className="py-1 px-8 w-full">
           {

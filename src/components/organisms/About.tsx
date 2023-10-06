@@ -3,7 +3,7 @@ import CardAbout from '../molecules/card/CardAbout';
 
 const About = () => {
   return (
-        <section className=' flex justify-center bg-[#F8FAFF] py-10 relative'>
+        <section className=' flex justify-center bg-[#F8FAFF] py-10 px-4 relative'>
 
             <CardAbout/>
         </section>

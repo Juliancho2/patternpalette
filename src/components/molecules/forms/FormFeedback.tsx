@@ -87,7 +87,7 @@ const FormFeedback = () => {
   return (
     <>
 
-      <div className='w-full max-w-6xl artboard artboard-horizontal rounded-md phone-4 mt-5 p-8 relative  mx-auto border'>
+      <div className='w-full max-w-3xl  rounded-md phone-4 mt-5 p-8 relative  mx-auto border'>
         <h2 className='text-slate-600 text-2xl font-medium text-center '>Give me feedback</h2>
         <form onSubmit={(e) => sendDataForm(e)} className="w-full  mx-auto flex relative rounded-md">
 

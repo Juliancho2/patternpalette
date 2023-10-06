@@ -10,8 +10,8 @@ const Footer = () => {
                     <Image width={30} height={30} alt="logo" src={Logo}/>
                     <p className='text-gray-400'>Copyright © 2023 - All right reserved</p>
                 </aside>
-                <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                    <p className='text-gray-400'>Made by @julianchoms</p>
+                <nav className="grid-flow-col gap-4 w-full  md:place-self-center md:justify-self-end">
+                    <p className='text-gray-400 w-full text-center md:text-end'>Made by @julianchoms</p>
                 </nav>
             </div >
         </footer>
