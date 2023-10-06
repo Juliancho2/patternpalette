@@ -12,7 +12,7 @@ export function converterTailwind (value:Pattern | undefined) {
     'size': '${value?.backgroundSize}',
   },
   opacity: {
-    '100': '${value?.opacity}',
+    '${value && (value.opacity * 100)}': '${value?.opacity}',
   },
   `;
   return codeTailwind;
