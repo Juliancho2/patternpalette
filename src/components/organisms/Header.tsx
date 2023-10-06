@@ -1,14 +1,15 @@
 import React from 'react';
-import Logo from '@/assets/img/logoP.svg';
-import Image from 'next/image';
+import NavHeader from '../molecules/navbar/NavHeader';
+import LogoMain from '../atomic/logo/LogoMain';
 
 const Header = () => {
   return (
-        <header className='border-b'>
-            <div className='w-full max-w-6xl mx-auto py-3 px-1 '>
-                <Image width={30} height={30} alt="logo" src={Logo} />
-            </div>
-        </header>
+    <header className='bg-[#111827] border border-gray-800 relative z-20 '>
+      <div className='w-full  max-w-6xl mx-auto py-3 px-1 flex items-center justify-between'>
+        <LogoMain width={30} height={30}/>
+        <NavHeader/>
+      </div>
+    </header>
   );
 };
 
