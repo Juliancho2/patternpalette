@@ -1,6 +1,5 @@
 'use client';
 import { PatternContext } from '@/context/patternsContext';
-import Image from 'next/image';
 import React, { useContext } from 'react';
 import code from '@/assets/img/code.svg';
 import tailwind from '@/assets/img/tailwind.svg';
@@ -11,6 +10,7 @@ import useCopyToClipboard from '@/hooks/useCopyToClipboard';
 import { converterCss } from '@/utils/converterCss';
 import { sizeExtractor } from '@/utils/sizeExtractor';
 import InputRange from '@/components/atomic/input/InputRange';
+import Picture from '@/components/atomic/picture/Picture';
 
 const SideBar = () => {
   const context = useContext(PatternContext);
@@ -60,7 +60,7 @@ const SideBar = () => {
               </div>
 
               <div className="mb-4">
-                <InputRange handleRange={(e) => handleBgOpacity(e)} label='Opacity' min={1} max={10} value={ context.bgBody.opacity * 10} />
+                <InputRange handleRange={(e) => handleBgOpacity(e)} label='Opacity' min={1} max={10} value={context.bgBody.opacity * 10} />
 
               </div>
               <InputColorBg />
@@ -69,10 +69,10 @@ const SideBar = () => {
           }
           <div className='flex mt-5 justify-center gap-6'>
             <button onClick={() => copyCss()} data-tip={isCopied ? 'copied' : 'css'} className={'tooltip shadow-sm border flex justify-center w-16 rounded-md p-1 bg-[#E6E8E9] hover:opacity-50 transition-all duration-300 cursor-pointer'}>
-              <Image src={code} alt='eye' width={20} />
+              <Picture src={code} alt='eye' width={20} height={20} />
             </button>
             <button onClick={() => copyTailwind()} data-tip="tailwind" className="flex items-center justify-center tooltip shadow-sm border w-16 rounded-md p-1 bg-[#E6E8E9] hover:opacity-50 transition-all duration-300 cursor-pointer">
-              <Image src={tailwind} alt='eye' width={20} />
+              <Picture src={tailwind} alt='eye' width={20} height={20} />
             </button>
           </div>
         </div>
