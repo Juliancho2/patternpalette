@@ -94,18 +94,18 @@ const FormFeedback = () => {
           <div className="  px-6 py-4 w-full min-h-[300px] mx-auto space-y-4  z-20">
             <div className='w-full'>
               <label htmlFor="name"></label>
-              <input value={form.name} onKeyUp={(e) => validationForm(e)} onChange={(e) => handleChange(e)} className="outline-none bg-transparent border-b border-indigo-200 border-t-indigo-500 duration-300 focus:border-b-[#610061] transition-all w-full text-slate-50 text-gray-600 py-2" required={true} type="text" placeholder="Name" name="name" />
+              <input value={form.name} onKeyUp={(e) => validationForm(e)} onChange={(e) => handleChange(e)} className="outline-none bg-transparent border-b border-indigo-200 border-t-indigo-500 duration-300 focus:border-b-[#610061] transition-all w-full  text-gray-600 py-2" required={true} type="text" placeholder="Name" name="name" />
             </div>
             <div>
               <label htmlFor="email"></label>
-              <input value={form.email} onKeyUp={(e) => validationForm(e)} onChange={(e) => handleChange(e)} className="outline-none bg-transparent text-gray-600 border-b border-indigo-200 focus:border-[#610061] transition-all duration-300 text-slate-50 w-full py-2" required={true} type="email" placeholder="Email" name="email" />
+              <input value={form.email} onKeyUp={(e) => validationForm(e)} onChange={(e) => handleChange(e)} className="outline-none bg-transparent text-gray-600 border-b border-indigo-200 focus:border-[#610061] transition-all duration-300  w-full py-2" required={true} type="email" placeholder="Email" name="email" />
             </div><div><label htmlFor="message"></label>
-              <textarea value={form.message} onKeyUp={(e) => validationForm(e)} onChange={(e) => handleChange(e)} className="outline-none resize-none bg-transparent border-b text-gray-600 border-indigo-200 focus:border-[#610061] transition-all duration-300 w-full text-slate-50 py-2" required={true} name="message" id="" placeholder="Message"></textarea></div>
+              <textarea value={form.message} onKeyUp={(e) => validationForm(e)} onChange={(e) => handleChange(e)} className="outline-none resize-none bg-transparent border-b text-gray-600 border-indigo-200 focus:border-[#610061] transition-all duration-300 w-full  py-2" required={true} name="message" id="" placeholder="Message"></textarea></div>
             <div>
               <button type="submit" className='h-8 text-xs font-semibold btn btn-success text-slate-50 px-4 py-1 w-full' disabled={!isActiveButton}>Submit</button>
             </div>
             {visibleError && <p className='w-full bg-rose-500 text-white text-center py-1'>{messageError}</p>}
-            {messageSuccessfully && <p className='w-full bg-green-500 text-white text-center py-1'>{messageError}</p>}
+            {messageSuccessfully && <p className='w-full bg-green-500 text-white text-center py-1'>{messageSuccessfully}</p>}
           </div>
         </form>
       </div>
