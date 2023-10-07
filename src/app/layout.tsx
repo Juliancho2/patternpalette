@@ -1,4 +1,5 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Kanit } from 'next/font/google';
 import React from 'react';
@@ -20,6 +21,7 @@ export default function RootLayout ({
     <html lang="en">
       <body className={`${inter.className}  min-h-[100vh]`}>
         {children}
+        <Analytics/>
       </body>
     </html>
   );
