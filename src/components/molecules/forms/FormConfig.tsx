@@ -47,7 +47,7 @@ const SideBar = () => {
       {
         context?.openModalCode && <ModalCode />
       }
-      <div className=" flex items-center w-full min-h-[350px] mx-auto   bg-white rounded  md:sticky z-10 top-5  row-full">
+      <div className="flex border border-gray-200 items-center w-full min-h-[350px] mx-auto bg-[#F8FAFF] rounded-xl  md:sticky z-10 top-16  row-full">
 
         <div className="py-1 px-8 w-full">
           {
@@ -68,10 +68,10 @@ const SideBar = () => {
             </div>
           }
           <div className='flex mt-5 justify-center gap-6'>
-            <button onClick={() => copyCss()} data-tip={isCopied ? 'copied' : 'css'} className={'tooltip shadow-sm border flex justify-center w-16 rounded-md p-1 bg-[#E6E8E9] hover:opacity-50 transition-all duration-300 cursor-pointer'}>
+            <button onClick={() => copyCss()} data-tip={isCopied ? 'copied' : 'css'} className={'tooltip shadow-sm border border-gray-200 flex justify-center w-16 rounded-md p-1 bg-[#F8FAFF] hover:bg-gray-200 transition-all duration-300 cursor-pointer '}>
               <Picture src={code} alt='eye' width={20} height={20} />
             </button>
-            <button onClick={() => copyTailwind()} data-tip="tailwind" className="flex items-center justify-center tooltip shadow-sm border w-16 rounded-md p-1 bg-[#E6E8E9] hover:opacity-50 transition-all duration-300 cursor-pointer">
+            <button onClick={() => copyTailwind()} data-tip="tailwind" className="flex items-center justify-center tooltip shadow-sm border border-gray-200 w-16 rounded-md p-1 bg-[#F8FAFF] hover:bg-gray-200 transition-all duration-300 cursor-pointer ">
               <Picture src={tailwind} alt='eye' width={20} height={20} />
             </button>
           </div>

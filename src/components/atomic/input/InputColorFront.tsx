@@ -6,7 +6,7 @@ import { HexColorPicker } from 'react-colorful';
 
 const InputColorFront = () => {
   const context = useContext(PatternContext);
-  const [color, setColor] = useState('#262626');
+  const [color, setColor] = useState('#F8FAFF');
   const { refElement } = useClickOutside({
     onOutsideClick () {
       context?.closePickers('front');
@@ -19,9 +19,9 @@ const InputColorFront = () => {
 
   return (
     <div >
-      <label className="text-slate-400 font-medium text-sm">Front</label>
+      <label className="text-slate-400 font-normal text-sm">Front</label>
       <div className='flex flex-col relative'>
-        <div onClick={() => context?.handlePickerFront()} style={{ background: `${color}` }} className='h-8 w-8 rounded-full border cursor-pointer'>
+        <div onClick={() => context?.handlePickerFront()} style={{ background: `${color}` }} className='h-8 w-8 rounded-full border border-gray-200  cursor-pointer'>
 
         </div>
         <div className='absolute top-8 z-10 ' ref={refElement}>

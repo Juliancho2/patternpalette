@@ -64,9 +64,9 @@ const FormFeedback = () => {
   return (
     <>
 
-      <div className='w-full max-w-3xl  rounded-md phone-4 mt-5 p-8 relative  mx-auto border'>
+      <div className='w-full max-w-3xl  rounded-md phone-4 mt-5 p-8 relative  mx-auto border border-gray-200 shadow-sm'>
         <h2 className='text-slate-600 text-2xl font-medium text-center '>Give me feedback</h2>
-        <form ref={formRef} onSubmit={(e) => sendDataForm(e)} className="w-full  mx-auto flex relative rounded-md">
+        <form ref={formRef} onSubmit={(e) => sendDataForm(e)} className="w-full  mx-auto flex relative rounded-md ">
           <div className="  px-6 py-4 w-full min-h-[300px] mx-auto space-y-4  z-20">
             <div className='w-full'>
               <InputFormFeedback form={form} onKeyUp={(e) => validationForm(e, form)} onChange={(e) => handleChange(e)} styles="outline-none bg-transparent border-b border-indigo-200 border-t-indigo-500 duration-300 focus:border-b-[#610061] transition-all w-full  text-gray-600 py-2" placeHolder="Name" name="name" />
