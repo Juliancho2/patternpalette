@@ -8,10 +8,12 @@ const Hero = () => {
     <section className='min-h-[50vh] w-full flex items-center justify-center relative'>
 
       <div className='w-full max-w-6xl mx-auto text-center '>
-        <h1 className='text-5xl p-4 text-center font-bold from-teal-500 via-teal-500 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent'>Pattern Pallete</h1>
+        <small className='text-base'>CSS patterns backgrounds</small>
+        <h1 className='text-5xl pb-4 text-center font-semibold text-[#011440] '>Pattern Pallete</h1>
+
         <p className='text-lg my-2 text-gray-400'>A collection of background patterns to take your web design to the next level.</p>
         <Link href={'https://github.com/Juliancho2/patternpallete'} target='_blank'>
-          <button className="btn btn-outline btn-success mt-5 shadow-sm ">
+          <button className="btn  text-white shadow-sm bg-[#F43F5E] hover:bg-gray-400  mt-5 ">
             <Image src={github} alt='github' /> Star On Github
           </button>
         </Link>

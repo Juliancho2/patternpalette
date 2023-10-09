@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Logo from '@/assets/img/logoP.svg';
+import Logo from '@/assets/img/logo.svg';
 
 type Props={
     width:number,

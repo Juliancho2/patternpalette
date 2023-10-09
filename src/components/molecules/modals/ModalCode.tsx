@@ -21,7 +21,7 @@ const ModalCode = () => {
 
   return (
     <div className='bg-black fixed  top-0 w-full h-screen left-0 flex justify-center items-center bg-opacity-40 z-20'>
-      <div ref={refElement} id='code' className='left-0 min-w-[450px] max-w-xl bottom-0 z-50 bg-[#2DD4BF]  rounded-2xl'>
+      <div ref={refElement} id='code' className='left-0 min-w-[450px] max-w-xl bottom-0 z-50 bg-[#F43F5E]  rounded-2xl'>
         <div className='px-4 text-sm flex justify-between text-white py-1'>
           <p >tailwind.config</p>
           <div className='flex gap-2 items-center'>

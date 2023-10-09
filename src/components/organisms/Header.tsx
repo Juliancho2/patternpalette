@@ -8,7 +8,6 @@ const Header = () => {
       <div className='w-full  max-w-6xl mx-auto py-3 px-4 flex items-center justify-between'>
         <div className='flex gap-2 items-center'>
           <LogoMain width={30} height={30} />
-          <p className='text-sm text-gray-400'>Pattern Pallete</p>
         </div>
         <NavHeader />
       </div>

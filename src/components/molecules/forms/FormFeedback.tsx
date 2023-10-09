@@ -65,7 +65,7 @@ const FormFeedback = () => {
     <>
 
       <div className='w-full max-w-3xl  rounded-md phone-4 mt-5 p-8 relative  mx-auto border border-gray-200 shadow-sm'>
-        <h2 className='text-slate-600 text-2xl font-medium text-center '>Give me feedback</h2>
+        <h2 className='text-black text-2xl font-medium text-center '>Give me feedback</h2>
         <form ref={formRef} onSubmit={(e) => sendDataForm(e)} className="w-full  mx-auto flex relative rounded-md ">
           <div className="  px-6 py-4 w-full min-h-[300px] mx-auto space-y-4  z-20">
             <div className='w-full'>
@@ -78,7 +78,7 @@ const FormFeedback = () => {
               <AreaFormFeedback form={form} onKeyUp={(e) => validationForm(e, form)} onChange={(e) => handleChange(e)} styles="outline-none resize-none bg-transparent border-b text-gray-600 border-indigo-200 focus:border-[#610061] transition-all duration-300 w-full  py-2" name="message" placeHolder="Message"/>
             </div>
             <div>
-              <button type="submit" className='h-8 text-xs font-semibold btn btn-success text-slate-50 px-4 py-1 w-full' disabled={!isActiveButton}>Submit</button>
+              <button type="submit" className='h-8 text-xs font-semibold btn bg-[#F43F5E] hover:bg-gray-400 text-slate-50 px-4 py-1 w-full' disabled={!isActiveButton}>Submit</button>
             </div>
             {visibleError && <p className='w-full bg-rose-500 text-white text-center py-1'>{messageError}</p>}
             {messageSuccessfully && <p className='w-full bg-green-500 text-white text-center py-1'>{messageSuccessfully}</p>}

@@ -29,7 +29,7 @@ const Card = ({ pattern }: Props) => {
         </div>
       </figure>
 
-      <div className="card-actions flex items-center bg-[#F8FAFF] justify-between p-4 ">
+      <div className="card-actions border-t flex items-center bg-[#F8FAFF] justify-between p-4 ">
         <p className='text-gray-400 text-sm'>{pattern.name}</p>
         <button onClick={() => handleView()} data-tip="view" className="tooltip shadow-sm border border-gray-200 h-8 w-8 rounded-full p-1  hover:bg-gray-200 transition-all duration-300 cursor-pointer">
           <Picture src={eye} alt='eye' width={40} height={40} />

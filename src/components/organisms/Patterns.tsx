@@ -39,7 +39,7 @@ const Patterns = () => {
   return (
     <section className='pt-2 pb-24 relative px-4'>
       <div className='max-w-6xl mx-auto flex flex-col md:grid md:grid-cols-3 gap-10'>
-        <div className='grid grid-cols-2 justify-center md:grid-cols-3 gap-3 col-span-2'>
+        <div className='grid grid-cols-2 justify-center md:grid-cols-3 gap-6 col-span-2'>
           {loading && <LoaderAccent/>}
           {context?.itemsPattern && [...context.itemsPattern].slice().sort(handleSort).map(pat => <Card key={pat.name} pattern={pat} />)}
 
