@@ -4,9 +4,9 @@ import React, { createContext, useState } from 'react';
 
 const initialBgBody: Pattern = {
   name: 'pattern-1',
-  background: 'radial-gradient(circle, #262626  10%, transparent 11%)',
+  background: 'radial-gradient(circle, #F8FAFF  10%, transparent 11%)',
   backgroundPosition: 'center',
-  backgroundColor: '#111827',
+  backgroundColor: '#F8FAFF',
   backgroundSize: '12px 12px',
   opacity: 1,
   favorite: false
@@ -26,6 +26,7 @@ export const PatternProvider: React.FC<{ children: React.ReactNode }> = ({ child
     setItemsPattern(pattern);
   };
 
+  const resetBgBody = () => setBgBody(initialBgBody);
   const handleBgBody = (value: Pattern) => {
     setBgBody(value);
   };
@@ -76,7 +77,7 @@ export const PatternProvider: React.FC<{ children: React.ReactNode }> = ({ child
     }
   };
   return (
-    <PatternContext.Provider value={{ bgBody, handleBgBody, handlePropertyOpacity, handlePropertySize, handlePropertyColor, handlePropertyColorLine, itemsPattern, handleFavoriteItems, handleModalCode, openModalCode, handlePickerFront, pickerFront, handlePickerBg, pickerBg, handleItemsPattern, closePickers }}>
+    <PatternContext.Provider value={{ bgBody, handleBgBody, resetBgBody, handlePropertyOpacity, handlePropertySize, handlePropertyColor, handlePropertyColorLine, itemsPattern, handleFavoriteItems, handleModalCode, openModalCode, handlePickerFront, pickerFront, handlePickerBg, pickerBg, handleItemsPattern, closePickers }}>
       {children}
     </PatternContext.Provider>
   );

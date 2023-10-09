@@ -15,6 +15,7 @@ export interface PatternContextInterface{
   handleItemsPattern:(value:Pattern[])=>void,
   bgBody:Pattern,
   handleBgBody:(value:Pattern)=>void,
+  resetBgBody:()=>void,
   handlePropertyOpacity:(value:number)=>void,
   handlePropertySize:(value:string)=>void,
   handlePropertyColor:(value:string)=>void,
