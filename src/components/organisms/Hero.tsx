@@ -9,7 +9,7 @@ const Hero = () => {
 
       <div className='w-full max-w-6xl mx-auto text-center '>
         <small className='text-base'>CSS patterns backgrounds</small>
-        <h1 className='text-5xl pb-4 text-center font-semibold text-[#011440] '>Pattern Pallete</h1>
+        <h1 className='text-5xl pb-4 text-center font-semibold text-[#011440] '>Pattern Palette</h1>
 
         <p className='text-lg my-2 text-gray-400'>A collection of background patterns to take your web design to the next level.</p>
         <Link href={'https://github.com/Juliancho2/patternpallete'} target='_blank'>
