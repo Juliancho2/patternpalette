@@ -11,7 +11,7 @@ import { converterCss } from '@/utils/converterCss';
 import { sizeExtractor } from '@/utils/sizeExtractor';
 import InputRange from '@/components/atomic/input/InputRange';
 import Picture from '@/components/atomic/picture/Picture';
-import downloadPng from '@/utils/DownloadPng';
+import downloadPng from '@/utils/downloadPng';
 
 const SideBar = () => {
   const context = useContext(PatternContext);
