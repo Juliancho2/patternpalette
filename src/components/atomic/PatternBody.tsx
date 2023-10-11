@@ -14,8 +14,9 @@ const PatternBody = () => {
 
   return (
     <div
+      id='bg-body'
       style={bg}
-      className={' w-full h-full absolute top-0'}
+      className={'h-full w-full'}
     >
     </div>
   );

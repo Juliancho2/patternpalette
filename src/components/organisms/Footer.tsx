@@ -3,7 +3,7 @@ import LogoMain from '../atomic/logo/LogoMain';
 
 const Footer = () => {
   return (
-        <footer className='bg-gray-100 '>
+        <footer className='bg-gray-100 relative'>
             <div className='footer flex  p-4 mx-auto text-neutral-content max-w-6xl'>
                 <aside className="items-center flex  w-full ">
                     <LogoMain width={30} height={30}/>
